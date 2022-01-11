@@ -1,2 +1,2 @@
-class Play < ApplicationRecord
+class Play < ApplicationRecord extend
 end
