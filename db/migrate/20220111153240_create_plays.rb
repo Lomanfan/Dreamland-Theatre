@@ -5,7 +5,7 @@ class CreatePlays < ActiveRecord::Migration[6.1]
       t.text :description
       t.string :director
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
