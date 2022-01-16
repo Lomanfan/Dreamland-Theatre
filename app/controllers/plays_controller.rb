@@ -4,7 +4,8 @@ class PlaysController < ApplicationController
   end
 
   def new
-    @play = Play.new
+    # @play = Play.new
+    @play = ''
   end
 
   def create
