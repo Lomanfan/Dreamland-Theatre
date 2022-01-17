@@ -1,6 +1,6 @@
 <h1>Edit Play</h1>
 
-<%= simple_form_for @play do |f| %>
+<%= simple_form_for @play, html: {multiple: true} do |f| %>
   <%= f.select :category_id, @categories %>
   <%= f.input :title, label: "Play Title" %>
   <%= f.input :description %>
