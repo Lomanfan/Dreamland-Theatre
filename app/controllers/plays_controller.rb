@@ -14,12 +14,25 @@ class PlaysController < ApplicationController
 
   def create
     @play = Play.new(play_params)
-
     if @play.save 
       redirect_to root_path    #redirect -> page refresh
     else
       render 'new'             #render -> info kept
     end
+  end
+
+  def edit
+  end  
+
+  def update
+    if @play.update(play_params)
+      redirect_to play_path(@play)
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
   end
 
   private
