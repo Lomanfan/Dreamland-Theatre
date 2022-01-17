@@ -1,11 +1,11 @@
 class PlaysController < ApplicationController
 
   def index
+    # @plays = Play.all.order("created_at DESC")
   end
 
   def new
-    # @play = Play.new
-    @play = ''
+    @play = Play.new
   end
 
   def create
@@ -16,7 +16,6 @@ class PlaysController < ApplicationController
     else
       render 'new'             #render -> info kept
     end
-
   end
 
   private
