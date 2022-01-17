@@ -8,6 +8,9 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
 
   config.web_console.permissions = '10.0.2.2'
+
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
     
   config.cache_classes = false
 
