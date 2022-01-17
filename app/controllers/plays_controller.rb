@@ -6,14 +6,14 @@ class PlaysController < ApplicationController
   end
 
   def new
-    @play = Play.new
+    @play = current_user.play.build
   end
 
   def show
   end
 
   def create
-    @play = Play.new(play_params)
+    @play = current_user.play.build(play_params)
     if @play.save 
       redirect_to root_path    #redirect -> page refresh
     else
