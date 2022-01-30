@@ -8,8 +8,13 @@ gem 'simple_form', '~> 5.1'
 gem 'bootstrap', '~> 5.1.3'
 # gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise', '~> 4.2'
+
+# gem 'mimemagic', '~> 0.3.0'
+# gem 'paperclip', '~> 4.2.1'
+# gem 'web-console', '~>= 4.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
+# gem 'rails', '~> 6.0', '>= 6.0.3.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
@@ -29,7 +34,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
